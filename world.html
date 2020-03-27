@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <script type="text/javascript" src="world1.js"></script>
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 2000px;
+      position: relative;
+      margin: auto;
+      margin-top: 90PX;
+      border: SOLID 4PX WHITE;
+      box-shadow: 1PX 2PX 10PX 10PX white;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 400px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+    <link rel="stylesheet" href="wod.css">
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="utf-8">
+    <title>COMPUTERS WORLD</title>
+  </head>
+  <body>
+
+
+
+    <div class="nav1" >
+
+
+    <div class="nav1-right">
+
+
+    <ol>
+      <li class="nav1-items">MY ACCOUNT</li>
+            <a href="signup.html">  <li class="nav1-items">CREATE ACCOUNT</li></a>
+        <a href="loginform.html"> <li class="nav1-items">LOGIN</li></a>
+    </ol>
+</div>
+<div class="nav1-LEFT">
+
+
+<ol>
+  <a href="aboutus.html"><li class="nav2-items">About Computers World</li></a>
+    <li class="nav2-items">Feedback&Suggestions</li>
+    <a href="contactus.html">  <li class="nav2-items">FAQs</li></a>
+</ol>
+</div>
+</div>
+<div class="nav2"  id="navbar">
+  <div class="nav2-left">
+    <h1 class="cw">COMPUTERS </h1>
+  <h1 class="cw2">  WORLD</h1>
+  </div>
+  <div class="nav2-right">
+    <button type="
+    " name="button" class="SEA-2">SEARCH</button></div>
+<input type="search" name="SERACHBAR" class="search-bar" placeholder="SEARCH THE ENTIRE STORE HERE..........">
+
+
+</div>
+
+<div class="nav3" >
+
+  <div class="left">
+    <ul>
+      <a href="world.html"> <li class="nav-3-li-1">HOME</li></a>
+
+          <a href="LAPTOP.HTML">    <li class="nav-3-li">LED'S</li></a>
+    <a href="graphics.html">  <li class="nav-3-li">GRAPHICS CARDS</li></a>
+    <a href="LAP.html"> <li class="nav-3-li">LAPTOPS</li></a>
+    <a href="SSD.html">  <li class="nav-3-li">SSDS</li></a>
+      <a href="HHD.html">   <li class="nav-3-li">HHDS</li></a>
+        <a href="prinetr.html"> <li class="nav-3-li">PRINTERS</li></a>
+    </ul>
+
+  </div>
+<div class="nav3-right">
+<img src="tw.png" alt="" width="20px;">
+
+</div>
+</div>
+
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="SLIDERIMG1.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="SLIDERIMG2.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="SLIDERIMG3.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="SLIDERIMG4.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="SLIDERIMG5.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+
+
+
+
+
+<h1 class="new-arrivals">FEATURED PRODUCTS</h1>
+<div class="CONTAINER1">
+
+
+  <div class="product1">
+    <div class="interdiv1">
+
+
+    <img src="1.jpg" alt="" width="140px;">
+    <h5 class="heading">BenQ ZOWIE XL2720 144Hz 27 inch e-Sports G...</h5>
+    <p class="PARA">ZOWIE’s XL-series features the premiere e-Spo...</p>
+
+    <ul>
+      <li>Spot Hidden Enemies</li>
+  <li>Easily Access Settings for Different Scenarios</li>
+  <li>Personalize Viewing Angles</li>
+
+    </ul><br><br><hr>
+    <h2>Rs.55,900 <del class="cut"> Rs.62,500</del>
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product2">
+  <div class="interdiv2">
+
+
+  <img src="2.jpg" alt="" width="140px;">
+  <h5 class="heading">Google Chromecast 3rd Generation - Charcoal</h5>
+  <p class="PARA">Stream from your device to your TV. Stream f...</p>
+
+  <ul>
+    <li>Smarts plus design. Elevate your TV with Chromecast.
+<li>Up to 1080p resolution</li>
+<li>Supports all wireless networks WiFi 802.11ac (2.4GHz/5GHz)</li>
+
+
+</ul><br><br><br><hr>
+  <h2>Rs.5,490<del class="cut"> Rs.6,500</del>
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product3">
+  <div class="interdiv3">
+
+
+  <img src="3.jpg" alt="" width="140px;">
+  <h5 class="heading">Seagate Expansion 4TB Portable Hard Drive ...</h5>
+  <p class="PARA">The Seagate® Expansion™ External hard drive b...</p>
+
+  <ul>
+    <li>Fast data transfer with USB 3.0 connectivity</li>
+<li>Drag and drop file saving, right out of the box</li>
+<li>Can be installed in seconds</li>
+
+
+  </ul><br><br><hr>
+  <h2>Rs.14,800<del class="cut"> Rs.18,000</del>
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product4">
+  <div class="interdiv3">
+
+
+  <img src="4.jpg" alt="" width="160px;">
+  <h5 class="heading">Mi Band 4 Fitness Tracker Smart Band</h5>
+  <p class="PARA">Change, starting from today smart bracelet wi...</p>
+
+  <ul>
+    <li>Changing 62 million band users worldwide*
+<li>Starting from today, time to change</li>
+<li>6-axis sensor</li>
+<li>Swimming recognition, 50m waterproof*</li>
+
+</ul><br><hr>
+  <h2>Rs.4,590 <del class="cut">Rs.5,400</del>
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product5">
+  <div class="interdiv5">
+
+
+  <img src="7.jpg" alt="" width="150px;">
+  <h5 class="heading">Dell Inspiron 15 5583 - 8th Gen Ci7, 8GB, ...</h5>
+  <p class="PARA">A 15-inch laptop that wirelessly integrates w...</p>
+
+  <ul>
+    <li>
+8th Generation Intel® Core™ i7-8565U Processor (8MB Cache, up to 4.6 GHz)</li>
+<li>8GB DDR4 2666MHz | 1TB 5400 RPM HDD | Backlit KB | DVDRW</li>
+<li>NVIDIA GeForce MX130 with 4GB GDDR5 Graphics Memory</li>
+
+  </ul><br><hr>
+  <h2>Rs.114,500
+</h2><br>
+<button type="button" name="button"  class="BTN-1">View Details</button>
+
+</div>
+</div>
+<div class="product6">
+  <div class="interdiv6">
+
+
+  <img src="6.jpg" alt="" width="160px;">
+  <h5 class="heading">MSI Geforce GT 1030 2G LP OC Graphics Card...</h5>
+  <p class="PARA">Accelerate your entire PC experience with the...</p>
+
+  <ul>
+    <li>Cores 384 Units</li>
+<li>1518 MHz / 1265 MHz</li>
+<li>2GB GDDR5 64-bit</li>
+<li>HDMI 2.0b / DisplayPort (Version 1.4)
+</li>
+
+  </ul><br><br><hr>
+  <h2>10000
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product7">
+  <div class="interdiv7">
+
+
+  <img src="10.jpg" alt="" width="160px;">
+  <h5 class="heading">MSI NVIDIA GeForce GTX 1060 GAMING X BV 6G...</h5>
+  <p class="PARA">Build your gaming machine with this MSI GeFor...</p>
+
+  <ul>
+    <li>1280 CUDA processing cores</li>
+<li>GPU Boost Clock Speed 1809 megahertz</li>
+<li>6GB GDDR5 (192-bit) on-board memory</li>
+<li>DVI-D, DisplayPort, HDMI</li>
+
+
+  </ul><br><br><hr>
+  <h2>Rs.35,900
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product8">
+  <div class="interdiv8">
+
+
+  <img src="9.jpg" alt="" width="160px;">
+  <h5 class="heading">HP Ink Tank 310 Photo and Document All-in-...</h5>
+  <p class="PARA">Easily print at high volumes for an extremely...</p>
+
+  <ul>
+    <li>Print, Scan and Copy</li>
+      <li>Print speed (color, draft, Letter) Up to 8 ppm</li>
+      <li>Monthly duty cycle Up to 1000 pages</li>
+
+
+  </ul><br><hr>
+  <h2> Rs.18,900 <del class="cut">Rs.20,000 </del>
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product9">
+  <div class="interdiv9">
+
+
+  <img src="5.jpg" alt="" width="150px;">
+  <h5 class="heading">Anker Soundcore Rave Party-Proof Speaker W...</h5>
+  <p class="PARA">RAVE | Lose yourself in the beat, drown in ea...</p>
+
+  <ul>
+    <li>Dual 5.25-inch woofers, 2-inch tweeters, and a bass port</li>
+<li>Heart-stopping 105 dB of sound with crisp treble and thumping bass</li>
+<li>Up to 24 continuous hours playtime</li>
+
+  </ul><br><hr>
+  <h2>Rs.43,500
+</h2><br>
+<button type="button" name="button"  class="BTN-2">View Details</button>
+
+</div>
+</div>
+<div class="product10">
+<div class="interdiv10">
+
+
+<img src="8.jpg" alt="" width="160px;">
+<h5 class="heading">Redragon Devarajas K556 RGB Mechanical Gam...</h5>
+<p class="PARA">To compete at the highest level, you need the...</p>
+
+<ul>
+  <li>Mechanical Brown Switches</li>
+<li>12 Backlit Modes</li>
+<li>Anti-ghosting with 104 Standard Keys</li>
+<li>Fully Anodized Aluminum Frame Brushed</li>
+
+</ul><br><hr>
+<h2>Rs.7,500
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product11">
+<div class="interdiv11">
+
+
+<img src="11.jpg" alt="" width="160px;">
+<h5 class="heading">Anker Soundcore Flare Portable Bluetooth 3...
+</h5>
+<p class="PARA">Soundcore Flare Portable Bluetooth 360° Speak...</p>
+
+<ul>
+  <li>360° Sound</li>
+<li>BassUp Technology</li>
+<li>Beat-Driven Light Show</li>
+<li>Soundcore App</li>
+
+</ul><br><br><hr>
+<h2>Rs.8,500
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+<div class="product12">
+<div class="interdiv12">
+
+
+<img src="12.jpg" alt="" width="160px;">
+<h5 class="heading">WD Green PC SSD 480GB 2.5" SATA WDS480G2G0A</h5>
+<p class="PARA">For fast performance and reliability, WD Gree...</p>
+
+<ul>
+  <li>Read up to 545MB/s</li>
+<li>Solid state reliability</li>
+<li>Less power. More play.</li>
+<li>An Easy Upgrade For Your PC</li>
+
+</ul><br><br><hr>
+<h2>Rs.8,290<del class="cut"> Rs.9,500</del>
+</h2><br>
+<button type="button" name="button"  class="BTN">View Details</button>
+
+</div>
+</div>
+</div>
+</div>
+
+<div class="ARRIVALS">
+  <h1 class="ARRIVALS-HEADING">NEW ARRIVALS</h1>
+</div>
+<div class="CONTAINER2">
+
+
+
+
+
+    <div class="product13">
+      <div class="interdiv13">
+
+
+      <img src="13.jpg" alt="" width="150px;">
+      <h5 class="heading">Anker Soundcore Flare+ Portable 360° Bluet...</h5>
+      <p class="PARA">Powerful 360° sound is elevated to new levels...</p>
+
+      <ul>
+        <li>Spot Hidden Enemies</li>
+    <li>Easily Access Settings for Different Scenarios</li>
+    <li>Personalize Viewing Angles</li>
+
+      </ul><br><br><hr>
+      <h2>Rs.11,700
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product14">
+    <div class="interdiv14">
+
+
+    <img src="14.jpg" alt="" width="150px;">
+    <h5 class="heading">Redragon Diamond Storm CA903 Case</h5>
+    <p class="PARA">Thick Tempered Glass Panel on Side and Front....</p>
+
+    <ul>
+      <li>Smarts plus design. Elevate your TV with Chromecast.
+  <li>Up to 1080p resolution</li>
+  <li>Supports all wireless networks WiFi 802.11ac (2.4GHz/5GHz)</li>
+  <li>HDMI plugs directly into TV</li>
+
+    </ul><br><hr>
+    <h2>Rs.10,990
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product15">
+    <div class="interdiv15">
+
+
+    <img src="15.jpg" alt="" width="160px;">
+    <h5 class="heading">Redragon HA300 Scepter PRO Gaming Headset ...</h5>
+    <p class="PARA"></p>
+
+    <ul>
+      <li>Fast data transfer with USB 3.0 connectivity</li>
+  <li>Drag and drop file saving, right out of the box</li>
+  <li>Can be installed in seconds</li>
+  <li>Terabytes More Storage</li>
+
+    </ul><br><br><hr>
+    <h2>Rs.2750
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product16">
+    <div class="interdiv16">
+
+
+    <img src="16.jpg" alt="" width="160px;">
+    <h5 class="heading">Anker Soundcore Flare Portable Bluetooth 3...</h5>
+    <p class="PARA">Soundcore Flare Portable Bluetooth 360° Speak...</p>
+
+    <ul>
+      <li>Changing 62 million band users worldwide*
+  <li>Starting from today, time to change</li>
+  <li>6-axis sensor</li>
+
+
+    </ul><br><br><hr>
+    <h2>Rs.3,590 <del class="cut">Rs.5,400</del>
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product17">
+    <div class="interdiv17">
+
+
+    <img src="17.jpg" alt="" width="150px;">
+    <h5 class="heading">Redragon G809 JUPITER Wireless Gamepad Blu...</h5>
+    <p class="PARA">TWO IN ONE CONTROLLER. Redragon G809 gamepad ...</p>
+
+    <ul>
+      <li>
+  8th Generation Intel® Core™ i7-8565U Processor (8MB Cache, up to 4.6 GHz)</li>
+  <li>8GB DDR4 2666MHz | 1TB 5400 RPM HDD | Backlit KB | DVDRW</li>
+  <li>NVIDIA GeForce MX130 with 4GB GDDR5 Graphics Memory</li>
+
+    </ul><br><hr>
+    <h2>Rs.114,500
+  </h2><br>
+  <button type="button" name="button"  class="BTN-1">View Details</button>
+
+  </div>
+  </div>
+  <div class="product18">
+    <div class="interdiv18">
+
+
+    <img src="18.jpg" alt="" width="160px;">
+    <h5 class="heading">Razer Goliathus Speed Cosmic Edition Soft ...<h5>
+    <p class="PARA">Accelerate your entire PC experience with the...</p>
+
+    <ul>
+      <li>Cores 384 Units</li>
+  <li>1518 MHz / 1265 MHz</li>
+  <li>2GB GDDR5 64-bit</li>
+  <li>HDMI 2.0b / DisplayPort (Version 1.4)
+  </li>
+
+    </ul><br><br><hr>
+    <h2>5000
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product19">
+    <div class="interdiv19">
+
+
+    <img src="19.jpg" alt="" width="160px;">
+    <h5 class="heading">Anker Soundcore Rave Party-Proof Speaker W...</h5>
+    <p class="PARA">Wireless Charger Type: Qi 10W</p>
+
+    <ul>
+      <li>1280 CUDA processing cores</li>
+  <li>GPU Boost Clock Speed 1809 megahertz</li>
+  <li>6GB GDDR5 (192-bit) on-board memory</li>
+  <li>DVI-D, DisplayPort, HDMI</li>
+
+
+    </ul><br><br><hr>
+    <h2>Rs.35,900
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product20">
+    <div class="interdiv20">
+
+
+    <img src="20.jpg" alt="" width="160px;">
+    <h5 class="heading">HP Ink Tank 310 Photo and Document All-in-...</h5>
+    <p class="PARA">Easily print at high volumes for an extremely...</p>
+
+    <ul>
+      <li>Print, Scan and Copy</li>
+        <li>Print speed (color, draft, Letter) Up to 8 ppm</li>
+        <li>Monthly duty cycle Up to 1000 pages</li>
+
+
+    </ul><br><hr>
+    <h2> Rs.18,900 <del class="cut">Rs.20,000 </del>
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product21">
+    <div class="interdiv21">
+
+
+    <img src="21.jpg" alt="" width="150px;">
+    <h5 class="heading">Anker Soundcore Rave Party-Proof Speaker W...</h5>
+    <p class="PARA">RAVE | Lose yourself in the beat, drown in ea...</p>
+
+    <ul>
+      <li>Dual 5.25-inch woofers, 2-inch tweeters, and a bass port</li>
+  <li>Heart-stopping 105 dB of sound with crisp treble and thumping bass</li>
+  <li>Up to 24 continuous hours playtime</li>
+
+    </ul><br><hr>
+    <h2>Rs.43,500
+  </h2><br>
+  <button type="button" name="button"  class="BTN-2">View Details</button>
+
+  </div>
+  </div>
+  <div class="product22">
+  <div class="interdiv22">
+
+
+  <img src="22.jpg" alt="" width="160px;">
+  <h5 class="heading">Redragon Devarajas K556 RGB Mechanical Gam...</h5>
+  <p class="PARA">To compete at the highest level, you need the...</p>
+
+  <ul>
+    <li>Mechanical Brown Switches</li>
+  <li>12 Backlit Modes</li>
+  <li>Anti-ghosting with 104 Standard Keys</li>
+
+
+  </ul><br><br><hr>
+  <h2>Rs.7,500
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product23">
+  <div class="interdiv23">
+
+
+  <img src="23.jpg" alt="" width="160px;">
+  <h5 class="heading">Anker Soundcore Flare Portable Bluetooth 3...
+  </h5>
+  <p class="PARA">Soundcore Flare Portable Bluetooth 360° Speak...</p>
+
+  <ul>
+    <li>360° Sound</li>
+  <li>BassUp Technology</li>
+  <li>Beat-Driven Light Show</li>
+  <li>Soundcore App</li>
+
+  </ul><br><hr>
+  <h2>Rs.8,500
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+  <div class="product24">
+  <div class="interdiv24">
+
+
+  <img src="24.jpg" alt="" width="160px;">
+  <h5 class="heading">WD Green PC SSD 480GB 2.5" SATA WDS480G2G0A</h5>
+  <p class="PARA">For fast performance and reliability, WD Gree...</p>
+
+  <ul>
+    <li>Read up to 545MB/s</li>
+  <li>Solid state reliability</li>
+  <li>Less power. More play.</li>
+  <li>An Easy Upgrade For Your PC</li>
+
+  </ul><br><br><hr>
+  <h2>Rs.8,290<del class="cut"> Rs.9,500</del>
+  </h2><br>
+  <button type="button" name="button"  class="BTN">View Details</button>
+
+  </div>
+  </div>
+</div>
+    </div>
+    <div class="FOOTER-1" style="background-color:black;">
+      <div class="FOOTER-1-LEFT">
+    <img src="msg.png" alt="" class="MSG">
+    <h2 class="NEWS">SIGN UP FOR NEWSLETTER</h2>
+    <input type="email" name="email" value="" placeholder="ENTER YOUR EMAIL ADDRESS" class="email">
+    <button type="button" name="button" class="SEA">SUBSCRIBE</button>
+      </div>
+      <div class="FOOTER-1-RIGHT">
+
+      </div>
+    </div>
+
+    <div class="FOOTER-3"style="background-color:black;" >
+      <div class="FOOTER-3-LEFT">
+       <img src="payment1.jpg" alt="" class="payimg" width="50px">
+          <img src="payment2.png" alt="" class="payimg" width="50px">
+              <img src="payment3.png" alt="" class="payimg" width="50px">
+                  <img src="payment4.png" alt="" class="payimg" width="50px">
+            <img src="master_card.png" alt="" class="payimg" width="50px">
+            <p class="cp-right">DESIGN BY FAISAL MALIK</p>
+      </div>
+
+    </div>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+  </body>
+</html>
